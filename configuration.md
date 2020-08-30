@@ -47,7 +47,7 @@ window.$docsify = {
 - Type: `Number`
 - Default: `6`
 
-Maximum Table of content level.
+Máximo de tablas por nivel de contenido.
 
 ```js
 window.$docsify = {
@@ -60,14 +60,14 @@ window.$docsify = {
 - Type: `Boolean|String`
 - Default: `false`
 
-Loads navbar from the Markdown file `_navbar.md` if **true**, or else from the path specified.
+Carga la barra de navegación desde el archivo Markdown `_navbar.md` si es **verdadero** o bien desde la ruta especificada.
 
 ```js
 window.$docsify = {
-  // load from _navbar.md
+  // carga desde _navbar.md
   loadNavbar: true,
 
-  // load from nav.md
+  // carga desde nav.md
   loadNavbar: 'nav.md'
 };
 ```
@@ -77,14 +77,14 @@ window.$docsify = {
 - Type: `Boolean|String`
 - Default: `false`
 
-Loads sidebar from the Markdown file `_sidebar.md` if **true**, or else from the path specified.
+Carga la barra lateral desde el archivo Markdown `_sidebar.md` si es **verdadero** o bien desde la ruta especificada.
 
 ```js
 window.$docsify = {
-  // load from _sidebar.md
+  // carga desde _sidebar.md
   loadSidebar: true,
 
-  // load from summary.md
+  // carga desde summary.md
   loadSidebar: 'summary.md'
 };
 ```
@@ -94,7 +94,7 @@ window.$docsify = {
 - Type: `Number`
 - Default: `0`
 
-Add table of contents (TOC) in custom sidebar.
+Agregar tabla de contenido (TOC) en la barra lateral personalizada.
 
 ```js
 window.$docsify = {
@@ -107,7 +107,7 @@ window.$docsify = {
 - Type: `Boolean`
 - Default: `false`
 
-Scrolls to the top of the screen when the route is changed.
+Se desplaza a la parte superior de la pantalla cuando se cambia la ruta.
 
 ```js
 window.$docsify = {
@@ -120,14 +120,14 @@ window.$docsify = {
 - Type: `String`
 - Default: `README.md`
 
-`README.md` in your docs folder will be treated as homepage for your website, but sometimes you may need to serve another file as your homepage.
+`README.md` en su carpeta de documentos se tratará como la página de inicio de su sitio web pero a veces puede que necesite publicar otro archivo como su página de inicio.
 
 ```js
 window.$docsify = {
-  // Change to /home.md
+  // Cambia a /home.md
   homepage: 'home.md',
 
-  // Or use the readme in your repo
+  // O use el archivo README en su repositorio
   homepage:
     'https://raw.githubusercontent.com/tu-repo/docs/master/README.md'
 };
@@ -137,16 +137,16 @@ window.$docsify = {
 
 - Type: `String`
 
-Base path of the website. You can set it to another directory or another domain name.
+Ruta base del sitio web. Puede configurarlo en otro directorio u otro nombre del dominio.
 
 ```js
 window.$docsify = {
   basePath: '/path/',
 
-  // Load the files from another site
+  // Carga los archivos de otro sitio
   basePath: 'https://docsify.js.org/',
 
-  // Even can load files from other repo
+  // Incluso puede cargar archivos de otro repositorio
   basePath:
     'https://raw.githubusercontent.com/ryanmcdermott/clean-code-javascript/master/'
 };
@@ -157,19 +157,19 @@ window.$docsify = {
 - Type: `Boolean|String|String[]|Object`
 - Default: `false`
 
-Activate the [cover feature](/es/cover.md). If true, it will load from `_coverpage.md`.
+Active la [cover feature](/es/cover.md). Si es verdadero, se cargará desde `_coverpage.md`
 
 ```js
 window.$docsify = {
   coverpage: true,
 
-  // Custom file name
+  // Nombre del archivo personalizado
   coverpage: 'cover.md',
 
-  // mutiple covers
+  // cubiertas múltiples
   coverpage: ['/', '/zh-cn/'],
 
-  // mutiple covers and custom file name
+  // múltiples portadas y nombre de archivo personalizado
   coverpage: {
     '/': 'cover.md',
     '/zh-cn/': 'cover.md'
@@ -302,7 +302,7 @@ window.$docsify = {
 ```
 
 ```markdown
-## This is test
+## Esto es una prueba
 
 <script>
   console.log(2333)
@@ -339,8 +339,8 @@ window.$docsify = {
 
 - type: `String|Function`
 
-We can display the file update date through **{docsify-updated<span>}</span>** variable. And format it by `formatUpdated`.
-See https://github.com/lukeed/tinydate#patterns
+Podemos mostrar la fecha de actualización del archivo a través de la variable **{docsify-updated<span>}</span>**. Y formatearlo por `formatUpdated`.
+Ver https://github.com/lukeed/tinydate#patterns
 
 ```js
 window.$docsify = {
@@ -359,7 +359,7 @@ window.$docsify = {
 - type: `String`
 - default: `_blank`
 
-Target to open external links. Default `'_blank'` (new window/tab)
+El objetivo es abrir los enlaces externos. Por defecto `'_blank'` (nueva ventana/pestaña)
 
 ```js
 window.$docsify = {
@@ -406,7 +406,7 @@ window.$docsify = {
 
 - type: `Object`
 
-Set the request resource headers.
+Ponga los encabezados de los recursos de la solicitud.
 
 ```js
 window.$docsify = {
@@ -420,7 +420,7 @@ window.$docsify = {
 
 - type: `String`
 
-Request file extension.
+Solicita la extensión del archivo.
 
 ```js
 window.$docsify = {
@@ -432,13 +432,13 @@ window.$docsify = {
 
 - type: `Array<string>`
 
-List of languages that will fallback to the default language when a page is request and didn't exists for the given local.
+Lista de idiomas que se recurrirá al idioma por defecto cuando se solicite una página y que no existía para el local dado.
 
-Example:
+Ejemplo:
 
-- try to fetch the page of `/de/overview`. If this page exists, it'll be displayed
-- then try to fetch the default page `/overview` (depending on the default language). If this page exists, it'll be displayed
-- then display 404 page.
+- trata de buscar la página de `/de/overview`. Si esta página existe, se mostrará
+- entonces intente buscar la página por defecto `/overview` (dependiendo del idioma por defecto). Si esta página existe, se mostrará
+- y luego mostrar la página 404.
 
 ```js
 window.$docsify = {
@@ -450,7 +450,7 @@ window.$docsify = {
 
 - type: `Boolean` | `String` | `Object`
 
-Load the `_404.md` file:
+Carga el archivo `_404.md`:
 
 ```js
 window.$docsify = {
@@ -458,7 +458,7 @@ window.$docsify = {
 };
 ```
 
-Load the customised path of the 404 page:
+Cargar la ruta personalizada de la página 404:
 
 ```js
 window.$docsify = {
@@ -466,7 +466,7 @@ window.$docsify = {
 };
 ```
 
-Load the right 404 page according to the localisation:
+Cargar la página 404 correcta según la localización:
 
 ```js
 window.$docsify = {
@@ -477,4 +477,4 @@ window.$docsify = {
 };
 ```
 
-> Note: The options with fallbackLanguages didn't work with the `notFoundPage` options.
+> Nota: Las opciones con fallbackLanguages no funcionaron con las opciones de `notFoundPage`.
